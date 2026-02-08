@@ -1,0 +1,23 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.image {
+    width: 100%;
+}
+
+.news {
+    width: 100vw;
+    border: 1px solid black;
+}
+
+.news:hover {
+    background-color: rgb(215, 228, 224);
+}
