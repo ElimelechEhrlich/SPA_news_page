@@ -1,23 +1,160 @@
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+body {
+    /* margin: 0 10rem; */
 }
 
-.title {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.image {
+#root {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    background-color: black
+}
+
+#nav {
+    margin: 1.5%;
+    display: flex;
+    color: white;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#headerDiv {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.headerDiv {
+    font-size: 1.2rem;
+}
+
+.News {
+    font-size: 2.5rem;
+}
+
+#content {
+    /* display: flex;
+    flex-direction: row; */
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.1rem;
+    place-items: center;
+}
+
+.news_content {
+    width: 100%;
+    /* justify-content: space-between; */
+}
+
+.home_content>.news {
+    width: 33%;
+}
+
+.home_content>.news:hover {
+    cursor: pointer;
 }
 
 .news {
-    width: 100vw;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
 }
 
+.title {
+    margin: 2%;
+    width: 96%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.author {
+    margin: 2%;
+    width: 96%;
+}
+
+.image {
+    width: 70%;
+    height: 50%;
+}
+
+
+
 .news:hover {
-    background-color: rgb(215, 228, 224);
+    background-color: rgb(220, 235, 229);
+}
+
+.description {
+
+    margin: 1%;
+    width: 90%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    margin: 1%;
+    width: 90%;
+    font-size: 1.5rem;
+    overflow: visible;
+    /* place-items: center; */
+}
+
+
+
+.headerCreateStory {
+    font-size: 3rem;
+    margin: 3rem;
+}
+
+form {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {}
+
+.titleInput {}
+
+.authorInput {}
+
+.contentInput {
+    height: 7rem;
+    align-content: start;
+    justify-content: start;
+}
+
+.button {
+    padding: 0.2rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 3rem;
+    justify-self: center;
+    place-self: center;
+}
+
+.contentInput::-webkit-input-placeholder {
+    text-align: start;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
